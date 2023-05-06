@@ -29,7 +29,7 @@ struct AstronautsView: View {
                         )
                 }
                 .navigationTitle("Astronauts")
-                .environment(\.defaultMinListRowHeight, 20)
+                .environment(\.defaultMinListRowHeight, 50)
                 
         }
         .onAppear {

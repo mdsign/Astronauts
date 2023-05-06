@@ -34,6 +34,7 @@ class AstronautProfileViewModel: ObservableObject {
                 DispatchQueue.main.async {
                     self.astronautName = astronaut.name
                     self.profileImage = astronaut.profile_image
+                    self.flights = astronaut.flights
                 }
                 print(astronaut)
             } catch let error {
