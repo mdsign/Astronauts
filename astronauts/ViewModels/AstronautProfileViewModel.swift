@@ -17,7 +17,6 @@ class AstronautProfileViewModel: ObservableObject {
     func fetchAstroProfileData(id: Int) {
         
         let urlString = apiEndpoint + String("\(id)")
-        print(urlString)
         
         guard let url = URL(string: urlString) else {
             return
@@ -36,7 +35,6 @@ class AstronautProfileViewModel: ObservableObject {
                     self.profileImage = astronaut.profile_image
                     self.flights = astronaut.flights
                 }
-                print(astronaut)
             } catch let error {
                 print(error)
             }

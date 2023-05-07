@@ -28,24 +28,19 @@ struct AstronautProfileView: View {
                 .foregroundColor(.gray)
                 .frame(width: 370, height: 370)
             })
-            Group {
+            VStack(alignment: .leading) {
                 Text("Flights")
                     .font(.title3)
                     .fontWeight(.heavy)
-                
                 ForEach(viewModel.flights, id: \.self) {
                     flight in
-                    Text(flight.name)
-                    font(.body)
+                    HStack(spacing: 15) {
+                        Image(systemName: "airplane")
+                        Text(flight.name).font(.body)
+                    }.padding(10)
+                    
                 }
-                .padding(10)
-            }
-            .padding(.top)
-            
-            Spacer()
-            
-            
-            
+            } .padding(20)
         }
         .onAppear {
             viewModel.fetchAstroProfileData(id: astronaut.id)

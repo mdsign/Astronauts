@@ -18,11 +18,10 @@ struct Astronaut: Hashable, Codable {
     let profile_image_thumbnail: String
 }
 
-struct AstronautProfile: Hashable, Codable {
-    let id: Int
+struct AstronautProfile: Codable {
     let name: String
     let profile_image: String
-    var flights: [Flight] = []
+    var flights: [Flight]
 }
 
 struct Flight: Hashable, Codable {

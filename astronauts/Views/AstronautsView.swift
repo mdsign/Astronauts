@@ -21,7 +21,7 @@ struct AstronautsView: View {
                                         .clipped().cornerRadius(20)
                                     VStack(alignment: .leading) {
                                         Text(astronaut.name).font(.title3)
-                                        Text("Age: \(astronaut.age)").font(.body)
+                                        Text("Age: \(astronaut.age) years").font(.body)
                                     }.padding(5)
                                     
                                 }
