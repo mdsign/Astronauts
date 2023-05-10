@@ -16,6 +16,7 @@
 		0CEA9CAD2A03CB8200B9803D /* AstronautsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEA9CAC2A03CB8200B9803D /* AstronautsViewModel.swift */; };
 		0CEA9CB12A0523C700B9803D /* AstronautProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEA9CB02A0523C700B9803D /* AstronautProfileViewModel.swift */; };
 		0CEA9CB32A052D0400B9803D /* AstronautProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEA9CB22A052D0400B9803D /* AstronautProfileView.swift */; };
+		0CEA9CB52A0A722600B9803D /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEA9CB42A0A722600B9803D /* LandingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		0CEA9CAC2A03CB8200B9803D /* AstronautsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautsViewModel.swift; sourceTree = "<group>"; };
 		0CEA9CB02A0523C700B9803D /* AstronautProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautProfileViewModel.swift; sourceTree = "<group>"; };
 		0CEA9CB22A052D0400B9803D /* AstronautProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautProfileView.swift; sourceTree = "<group>"; };
+		0CEA9CB42A0A722600B9803D /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				0CEA9C972A03276300B9803D /* AstronautsView.swift */,
 				0CEA9CB22A052D0400B9803D /* AstronautProfileView.swift */,
+				0CEA9CB42A0A722600B9803D /* LandingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				0CEA9CAD2A03CB8200B9803D /* AstronautsViewModel.swift in Sources */,
 				0CEA9C982A03276300B9803D /* AstronautsView.swift in Sources */,
 				0CEA9CB32A052D0400B9803D /* AstronautProfileView.swift in Sources */,
+				0CEA9CB52A0A722600B9803D /* LandingView.swift in Sources */,
 				0CEA9CA52A032A6000B9803D /* AstroApiService.swift in Sources */,
 				0CEA9C962A03276300B9803D /* astronautsApp.swift in Sources */,
 				0CEA9CA82A03BF2500B9803D /* Astronaut.swift in Sources */,

@@ -12,22 +12,28 @@ struct AstronautsView: View {
     var body: some View {
         NavigationView {
                 List(viewModel.astraunauts, id: \.id) {astronaut in
-                        NavigationLink(
+                   NavigationLink(
                             destination: AstronautProfileView(astronaut: astronaut ),
                             label: {
                                 HStack {
                                     AsyncImage(url: URL(string: astronaut.profile_image_thumbnail))
-                                        .frame(width: 100, height: 100)
-                                        .clipped().cornerRadius(20)
+                                        .frame(width: 120, height: 120)
+                                        .cornerRadius(20)
+                                        .overlay(RoundedRectangle(cornerRadius: 20)
+                                            .stroke(Color.white, lineWidth: 5))
+                                    
                                     VStack(alignment: .leading) {
-                                        Text(astronaut.name).font(.title3)
-                                        Text("Age: \(astronaut.age) years").font(.body)
-                                    }.padding(5)
+                                                    Text(astronaut.name).font(.title3)
+                                                    Text("Age: \(astronaut.age) years").font(.body)
+                                        Spacer()
+                                            
+                                                }.padding(25)
                                     
                                 }
                             }
                         )
                 }
+                .listStyle(.plain)
                 .navigationTitle("Astronauts")
                 .environment(\.defaultMinListRowHeight, 50)
                 

@@ -20,14 +20,17 @@ struct AstronautProfileView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 370, height: 370)
-                    .cornerRadius(5)
+                    .cornerRadius(2)
+                    .overlay(RoundedRectangle(cornerRadius: 2)
+                        .stroke(Color.black, lineWidth: 2))
                 
             }, placeholder: {
                 Image(systemName: "person")
                 .resizable()
                 .foregroundColor(.gray)
-                .frame(width: 370, height: 370)
+                .frame(width: 300, height: 300)
             })
+            
             VStack(alignment: .leading) {
                 Text("Flights")
                     .font(.title3)
@@ -41,6 +44,7 @@ struct AstronautProfileView: View {
                     
                 }
             } .padding(20)
+            Spacer()
         }
         .onAppear {
             viewModel.fetchAstroProfileData(id: astronaut.id)
