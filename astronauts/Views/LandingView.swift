@@ -30,14 +30,14 @@ struct LandingScreenView: View {
                     .scaleEffect(size)
                     .opacity(opacity)
                     .onAppear {
-                        withAnimation(.easeIn(duration: 3)) {
+                        withAnimation(.easeIn(duration: 4)) {
                             self.size = 0.9
                             self.opacity = 1.0
                         }
                     }
                 }
                 .onAppear {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 4.0){
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 5.0){
                         withAnimation {
                             self.isActive = true
                         }

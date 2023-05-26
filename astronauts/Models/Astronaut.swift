@@ -16,11 +16,13 @@ struct Astronaut: Hashable, Codable {
     let name: String
     let age: Int
     let profile_image_thumbnail: String
+    let nationality: String
 }
 
 struct AstronautProfile: Codable {
     let name: String
     let profile_image: String
+    let bio: String
     var flights: [Flight]
 }
 

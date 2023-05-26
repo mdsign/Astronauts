@@ -14,4 +14,4 @@ struct astronautsApp: App {
             LandingScreenView()
         }
     }
-}
+} 

@@ -10,6 +10,7 @@ import Foundation
 class AstronautProfileViewModel: ObservableObject {
     @Published var astronautName: String = ""
     @Published var profileImage: String = ""
+    @Published var bioData: String = ""
     @Published var flights: [Flight] = []
     
     private var apiEndpoint = "https://ll.thespacedevs.com/2.2.0/astronaut/"
@@ -33,6 +34,7 @@ class AstronautProfileViewModel: ObservableObject {
                 DispatchQueue.main.async {
                     self.astronautName = astronaut.name
                     self.profileImage = astronaut.profile_image
+                    self.bioData = astronaut.bio
                     self.flights = astronaut.flights
                 }
             } catch let error {
